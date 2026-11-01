@@ -1,7 +1,7 @@
 # Spike A: xlang `meta_reader` vs Wine `rometadata`
 
 Upstream: microsoft/xlang `e8a68e7c8a41801594cabca65ebd5d08ece05b75`, `src/library` (MIT, repo-level LICENSE; files have no per-file license header, see `licscan-xlang-e8a68e7.csv`).
-Not imported: the spike compiles against a sparse clone outside this repo.
+Imported afterwards in the M1 step (see PROVENANCE.md).
 
 ## Result (compiled and run, separate)
 - **Compiled:** yes, with llvm-mingw clang 24.0.0git, `-std=c++17 -static`. Two portability fixes are needed, neither in the headers' logic: add `#include <algorithm>` (missing in `view.h`/`column.h`: `std::equal_range`, `std::upper_bound`), and define `_WIN32_WINNT=0x0A00` so `CreateFile2` is declared. We do these via `-include algorithm -D_WIN32_WINNT=0x0A00`, no source patch required.

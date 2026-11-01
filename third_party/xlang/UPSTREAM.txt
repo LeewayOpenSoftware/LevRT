@@ -1,0 +1,6 @@
+Upstream:  https://github.com/microsoft/xlang
+Commit:    e8a68e7c8a41801594cabca65ebd5d08ece05b75 (master, fetched 2026-11-01)
+Path:      src/library/{meta_reader.h, impl/base.h, impl/meta_reader/*.h}  (19 files)
+License:   MIT, Copyright (c) Microsoft Corporation (root LICENSE copied here). Files carry no per-file header.
+Changes:   none (byte-identical, see SHA256SUMS.txt). Build needs -include algorithm and _WIN32_WINNT>=0x0A00, provided by CMake.
+Excluded:  everything else in xlang, notably src/UndockedRegFreeWinRT/detours (vendored Detours, not audited).
