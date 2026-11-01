@@ -1,0 +1,130 @@
+file,license_evidence,copyright_line,verdict
+.gitattributes,none,,repo
+.gitignore,none,,repo
+Directory.Packages.props,none,,repo
+LICENSE,MIT,Copyright (c) Microsoft Corporation. All rights reserved.,ok
+README.md,MIT,,ok
+src/CMakeLists.txt,none,,repo
+src/CMakeSettings.json,none,,repo
+src/Directory.Build.Props,none,,repo
+src/readme.md,none,,repo
+src/foundation/CMakeLists.txt,none,,repo
+src/library/catch.hpp,BSL-1.0,Copyright (c) 2019 Two Blue Cubes Ltd. All rights reserved.,ok
+src/library/cmd_reader.h,none,,repo
+src/library/meta_reader.h,none,,repo
+src/library/meta_writer.h,none,,repo
+src/library/task_group.h,none,,repo
+src/library/text_writer.h,none,,repo
+src/library/impl/base.h,none,,repo
+src/library/impl/cmd_reader_windows.h,none,,repo
+src/library/impl/meta_reader/cache.h,none,,repo
+src/library/impl/meta_reader/column.h,none,,repo
+src/library/impl/meta_reader/custom_attribute.h,none,,repo
+src/library/impl/meta_reader/database.h,none,,repo
+src/library/impl/meta_reader/enum.h,none,,repo
+src/library/impl/meta_reader/enum_traits.h,none,,repo
+src/library/impl/meta_reader/filter.h,none,,repo
+src/library/impl/meta_reader/flags.h,none,,repo
+src/library/impl/meta_reader/helpers.h,none,,repo
+src/library/impl/meta_reader/index.h,none,,repo
+src/library/impl/meta_reader/key.h,none,,repo
+src/library/impl/meta_reader/pe.h,none,,repo
+src/library/impl/meta_reader/schema.h,none,,repo
+src/library/impl/meta_reader/signature.h,none,,repo
+src/library/impl/meta_reader/table.h,none,,repo
+src/library/impl/meta_reader/type_helpers.h,none,,repo
+src/library/impl/meta_reader/view.h,none,,repo
+src/library/impl/meta_writer/pe_writer.h,none,,repo
+src/platform/activation_abi.cpp,none,,repo
+src/platform/cache_string.h,none,,repo
+src/platform/CMakeLists.txt,none,,repo
+src/platform/common_activation.cpp,none,,repo
+src/platform/common_memory.cpp,none,,repo
+src/platform/common_string_convert.cpp,none,,repo
+src/platform/error_abi.cpp,none,,repo
+src/platform/heap_string.h,none,,repo
+src/platform/opaque_string_wrapper.h,none,,repo
+src/platform/platform_activation.h,none,,repo
+src/platform/string_abi.cpp,none,,repo
+src/platform/string_allocate.h,none,,repo
+src/platform/string_base.cpp,none,,repo
+src/platform/string_base.h,none,,repo
+src/platform/string_convert.h,none,,repo
+src/platform/string_reference.h,none,,repo
+src/platform/string_traits.h,none,,repo
+src/platform/win32_activation.cpp,none,,repo
+src/platform/win32_memory.cpp,none,,repo
+src/platform/win32_pal_internal.h,none,,repo
+src/platform/win32_string_convert.cpp,none,,repo
+src/platform/helpers/atomic_ref_count.h,none,,repo
+src/platform/helpers/pal_error.h,none,,repo
+src/platform/helpers/pal_internal.h,none,,repo
+src/platform/published/pal.h,none,,repo
+src/UndockedRegFreeWinRT/Directory.Build.props,none,,repo
+src/UndockedRegFreeWinRT/README.md,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT.sln,none,,repo
+src/UndockedRegFreeWinRT/Catch/catch.hpp,BSL-1.0,Copyright (c) 2019 Two Blue Cubes Ltd. All rights reserved.,ok
+src/UndockedRegFreeWinRT/detours/creatwth.cpp,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/detours/detours.cpp,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/detours/detours.h,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/detours/detours.vcxproj,none,,repo
+src/UndockedRegFreeWinRT/detours/detver.h,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/detours/disasm.cpp,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/detours/disolarm.cpp,none,,repo
+src/UndockedRegFreeWinRT/detours/disolarm64.cpp,none,,repo
+src/UndockedRegFreeWinRT/detours/disolia64.cpp,none,,repo
+src/UndockedRegFreeWinRT/detours/disolx64.cpp,none,,repo
+src/UndockedRegFreeWinRT/detours/disolx86.cpp,none,,repo
+src/UndockedRegFreeWinRT/detours/image.cpp,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/detours/modules.cpp,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/detours/uimports.cpp,none,Copyright (c) Microsoft Corporation.  All rights reserved.,repo
+src/UndockedRegFreeWinRT/EmbeddedManifestManagedTest/Program.cs,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedManifestTest/directory.build.props,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedManifestTest/EmbeddedManifestTest.vcxproj,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedManifestTest/embedded_manifest_test.cpp,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedManifestTest/main.cpp,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedManifestTest/pch.cpp,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedManifestTest/pch.h,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/Class.cpp,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/Class.h,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/Class.idl,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/EmbeddedTestComponent.def,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/EmbeddedTestComponent.vcxproj,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/pch.cpp,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/pch.h,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/PropertySheet.props,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/readme.txt,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/resource.h,none,,repo
+src/UndockedRegFreeWinRT/EmbeddedTestComponent/Resource.rc,none,,repo
+src/UndockedRegFreeWinRT/ManifestParserTest/main.cpp,none,,repo
+src/UndockedRegFreeWinRT/ManifestParserTest/ManifestParserTest.cpp,none,,repo
+src/UndockedRegFreeWinRT/ManifestParserTest/ManifestParserTest.vcxproj,none,,repo
+src/UndockedRegFreeWinRT/ManifestParserTest/pch.h,none,,repo
+src/UndockedRegFreeWinRT/mwinrtact/mwinrtact.cs,none,,repo
+src/UndockedRegFreeWinRT/Nuget/LICENSE,MIT,Copyright (c) Microsoft Corporation,ok
+src/UndockedRegFreeWinRT/Nuget/Microsoft.Windows.UndockedRegFreeWinrt.targets,none,,repo
+src/UndockedRegFreeWinRT/Nuget/readme.txt,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/Class.cpp,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/Class.h,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/Class.idl,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/pch.cpp,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/pch.h,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/PropertySheet.props,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/readme.txt,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/TestComponent.def,none,,repo
+src/UndockedRegFreeWinRT/TestComponent/TestComponent.vcxproj,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/catalog.cpp,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/catalog.h,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/dllmain.cpp,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/extwinrt.h,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.cpp,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/typeresolution.h,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/UndockedRegFreeWinRT.vcxproj,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRT/winrtact.def,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRTManagedTest/Program.cs,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRTTest/directory.build.props,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRTTest/main.cpp,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRTTest/pch.cpp,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRTTest/pch.h,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRTTest/test_apartment_activation.cpp,none,,repo
+src/UndockedRegFreeWinRT/UndockedRegFreeWinRTTest/UndockedRegFreeWinRTTest.vcxproj,none,,repo
