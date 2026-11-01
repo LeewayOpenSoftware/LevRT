@@ -23,4 +23,6 @@ behaviour are used as references. No Microsoft code, strings, disassembly,
 
 ## License
 
-Not chosen yet.
+[LGPL-2.1-or-later](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html). The full text
+is in [COPYING](COPYING). Imported third-party components are listed in
+[PROVENANCE.md](PROVENANCE.md) and [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md).
