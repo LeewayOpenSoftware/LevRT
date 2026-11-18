@@ -2,5 +2,5 @@ Upstream:  https://github.com/microsoft/xlang
 Commit:    e8a68e7c8a41801594cabca65ebd5d08ece05b75 (master, fetched 2026-11-01)
 Path:      src/library/{meta_reader.h, impl/base.h, impl/meta_reader/*.h}  (19 files)
 License:   MIT, Copyright (c) Microsoft Corporation (root LICENSE copied here). Files carry no per-file header.
-Changes:   none (byte-identical, see SHA256SUMS.txt). Build needs -include algorithm and _WIN32_WINNT>=0x0A00, provided by CMake.
+Changes:   one downstream portability fix in impl/meta_reader/table.h: row_base::operator-- returns the derived row reference, matching operator++ and the declared API. Build also force-includes algorithm and utility and defines _WIN32_WINNT>=0x0A00 in CMake.
 Excluded:  everything else in xlang, notably src/UndockedRegFreeWinRT/detours (vendored Detours, not audited).

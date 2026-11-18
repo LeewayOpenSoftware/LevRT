@@ -3,12 +3,17 @@ project(LevRT CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# xlang meta_reader (MIT, imported verbatim, see PROVENANCE.md). Needs <algorithm> force-included
-# (missing include upstream) and the Windows 10 API level for CreateFile2.
+# xlang meta_reader (MIT, imported with the small portability fix documented in PROVENANCE.md).
+# It needs <algorithm> and <utility> force-included (missing includes upstream) plus the Windows
+# 10 API level for CreateFile2.
 add_library(levrt_meta_reader INTERFACE)
 target_include_directories(levrt_meta_reader INTERFACE third_party/xlang/library)
 target_compile_definitions(levrt_meta_reader INTERFACE _WIN32_WINNT=0x0A00 WINVER=0x0A00)
-target_compile_options(levrt_meta_reader INTERFACE -include algorithm)
+if(MSVC)
+    target_compile_options(levrt_meta_reader INTERFACE /FIalgorithm /FIutility)
+else()
+    target_compile_options(levrt_meta_reader INTERFACE "SHELL:-include algorithm" "SHELL:-include utility")
+endif()
 
 add_executable(meta_reader_smoke tests/meta_reader_smoke.cpp)
 target_link_libraries(meta_reader_smoke PRIVATE levrt_meta_reader)
@@ -19,5 +24,9 @@ target_link_libraries(hstring_tests PRIVATE runtimeobject)
 
 add_executable(levrt-activate tools/levrt-activate/levrt-activate.cpp)
 target_compile_definitions(levrt-activate PRIVATE _WIN32_WINNT=0x0A00 UNICODE _UNICODE)
-target_link_options(levrt-activate PRIVATE -municode)
+if(MSVC)
+    target_link_options(levrt-activate PRIVATE /SUBSYSTEM:CONSOLE)
+else()
+    target_link_options(levrt-activate PRIVATE -municode)
+endif()
 target_link_libraries(levrt-activate PRIVATE runtimeobject ole32)
